@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="760.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SupplierFormController">
+    <children>
+      <ImageView fitHeight="530.0" fitWidth="760.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Frame%2028.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="30.0" layoutY="30.0" opacity="0.75" prefHeight="470.0" prefWidth="700.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-background-color: white;" />
+        <TextField fx:id="txtId" layoutX="70.0" layoutY="90.0" onAction="#IdOnAtion" prefHeight="30.0" prefWidth="286.0" promptText="Supplier Id" styleClass="lablebtn">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtName" layoutX="70.0" layoutY="137.0" prefHeight="30.0" prefWidth="286.0" promptText="SupplierName" styleClass="lablebtn">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtContact" layoutX="70.0" layoutY="181.0" prefHeight="30.0" prefWidth="286.0" promptText="Supplier Contact" styleClass="lablebtn">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button layoutX="72.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="144.0" styleClass="btncrud" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="234.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="144.0" styleClass="btncrud" text="Update">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="406.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="144.0" styleClass="btncrud" text="Delete">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="572.0" layoutY="275.0" mnemonicParsing="false" onAction="#cleartxt" prefHeight="30.0" prefWidth="144.0" styleClass="btncrud" text="Clear">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblSupplier" layoutX="62.0" layoutY="317.0" prefHeight="158.0" prefWidth="655.0" styleClass="table">
+            <columns>
+                <TableColumn fx:id="colSupID" prefWidth="84.66668891906738" text="Supplier Id" />
+                <TableColumn fx:id="colSupName" prefWidth="198.66669464111328" text="Supplier Name" />
+                <TableColumn fx:id="colSupContact" prefWidth="181.3333740234375" text="Contact" />
+                <TableColumn fx:id="colSupAddress" prefWidth="215.33322143554688" text="Address" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtAddress" layoutX="70.0" layoutY="226.0" prefHeight="30.0" prefWidth="286.0" promptText="Supplier Address" styleClass="lablebtn">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

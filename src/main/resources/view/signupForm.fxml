@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #00B2FF;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SignupFormController">
+   <children>
+      <ImageView fitHeight="714.0" fitWidth="1277.0" layoutX="212.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img3-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="22.0" layoutY="26.0" opacity="0.83" prefHeight="675.0" prefWidth="1234.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="456.0" layoutX="8.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Frame%2013.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="661.0" layoutY="44.0" prefHeight="592.0" prefWidth="462.0" styleClass="productPane">
+               <children>
+                  <TextField fx:id="txtUsername2" layoutX="20.0" layoutY="151.0" prefHeight="57.0" prefWidth="424.0" promptText="Username" styleClass="lablebtn">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txtPw2" layoutX="20.0" layoutY="242.0" prefHeight="56.0" prefWidth="425.0" promptText="Password" styleClass="lablebtn">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="20.0" prefHeight="118.0" prefWidth="294.0" text="SignUp">
+                     <font>
+                        <Font name="System Bold" size="58.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="120.0" layoutY="423.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="59.0" prefWidth="236.0" styleClass="btn" text="SignUp" textFill="#1600ff">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="31.0" layoutY="496.0" prefHeight="118.0" prefWidth="294.0" text="Do you have an account ?">
+                     <font>
+                        <Font name="System Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="310.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="48.0" prefWidth="118.0" styleClass="btn" text="Login" textFill="#1600ff">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <PasswordField layoutX="20.0" layoutY="328.0" prefHeight="56.0" prefWidth="425.0" promptText="Confirm Password" styleClass="lablebtn">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+            <ImageView fitHeight="569.0" fitWidth="425.0" layoutX="61.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/man.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

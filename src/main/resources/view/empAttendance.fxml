@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.85" prefHeight="563.0" prefWidth="962.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.EmpAttendanceContrller">
+   <children>
+      <ImageView fitHeight="271.0" fitWidth="511.0" layoutX="226.0" layoutY="51.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Frame%2013.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="29.0" layoutY="123.0" prefHeight="43.0" prefWidth="286.0" promptText="Attendance Id" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="339.0" layoutY="123.0" prefHeight="43.0" prefWidth="286.0" promptText="Time In" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="639.0" layoutY="123.0" prefHeight="43.0" prefWidth="286.0" promptText="Time Out" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="142.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="144.0" styleClass="btncrud" text="Save" textFill="#09ff00">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="312.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="144.0" styleClass="btncrud" text="Update" textFill="#ff7d00">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="144.0" styleClass="btncrud" text="Delete" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="652.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="144.0" styleClass="btncrud" text="Clear" textFill="#717171">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <TableView layoutX="18.0" layoutY="349.0" prefHeight="191.0" prefWidth="918.0" styleClass="table">
+         <columns>
+            <TableColumn prefWidth="167.20000839233398" text="ID" />
+            <TableColumn prefWidth="180.80003356933594" text="Employee" />
+            <TableColumn prefWidth="188.79998779296875" text="Time In" />
+            <TableColumn prefWidth="188.79998779296875" text="Time Out" />
+            <TableColumn prefWidth="190.39993896484373" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="18.0" prefHeight="43.0" prefWidth="408.0" text="Employee Attendance Manage " textAlignment="CENTER" textFill="#00bfff" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="140.0" layoutY="196.0" prefHeight="44.0" prefWidth="278.0" promptText="Date" styleClass="text-prompt" />
+      <ComboBox layoutX="498.0" layoutY="195.0" prefHeight="35.0" prefWidth="262.0" promptText="Employee Id" styleClass="textBox" />
+   </children>
+</AnchorPane>
